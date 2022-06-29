@@ -10,6 +10,9 @@ async function iniciarSesion(){ //Para poder hacer uso del await necesitamos que
     datos.email = document.querySelector('#txtEmail').value;
     datos.password = document.querySelector('#txtPassword').value;
 
+    //El código esta respaldado por información continua, en caso de error reportarlo en una cadena de caracteres
+
+
     //El siguiente código genera un JSON
     const request = await fetch('api/login', { //El await me indica que se quedara esparando
         method: 'POST',

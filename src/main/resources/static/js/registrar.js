@@ -14,6 +14,11 @@ async function registrarUsuarios(){ //Para poder hacer uso del await necesitamos
 
     let repetirPassword = document.querySelector('#txtRepetirPassword').value;
 
+    if(datos.nombre == "" || datos.email == "" || datos.password == ""){
+        alert('No puede dejar los campos con * vacíos')
+        return;
+    }
+
     if(repetirPassword != datos.password){
         alert('La contraseña es diferente')
         return;

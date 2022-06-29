@@ -1,5 +1,4 @@
 package com.cursojava.curso.dao;
-
 import com.cursojava.curso.models.Usuario;
 import de.mkammerer.argon2.Argon2;
 import de.mkammerer.argon2.Argon2Factory;

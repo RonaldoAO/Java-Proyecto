@@ -41,6 +41,7 @@ function getHeaders(){
 }
 
 async function eliminarUsuario(id){
+    //Una vez que se elimina el usuario de la cuenta, la sesión se queda iniciada
     if(!confirm(' ¿Esta seguro de que quieres eliminar este usuario')){
         return;
     }
